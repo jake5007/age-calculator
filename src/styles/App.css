@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: hsl(0, 0%, 94%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.red-font {
+    color: hsl(0, 100%, 67%) !important;
+}
+
+.red-border {
+    border-color: hsl(0, 100%, 67%) !important;
+}
+
+.container {
+    width: 800px;
+    padding: 50px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    border-bottom-right-radius: 30%;
+}
+
+.input-container {
+    display: flex;
+}
+
+.input-container label {
+    letter-spacing: 0.2em;
+    color: hsl(0, 1%, 44%);
+}
+
+.input-container input {
+    display: block;
+    font-size: 32px;
+    width: 170px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+.input-container .msg {
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.divider-container {
+    width: 100%;
+    padding: 40px 0;
+    position: relative;
+}
+
+.divider-container .divider {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(0, 0%, 94%);
+}
+
+.divider-container .btn {
+    background: url('/public/assets/arrow.svg') no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.divider-container .btn:hover {
+    background: url('/public/assets/arrow-hover.svg') no-repeat;
+    width: 80px;
+    height: 80px;
+    background-size: 80px 80px;
+}
+
+.result-container span:first-child {
+    color: hsl(259, 100%, 65%);
+}
+
+.result-container span {
+    font-size: 82px;
+    font-style: italic;
+    font-weight: 800;
+}
+
+@media (max-width: 375px) {
+    .container {
+        width: 340px;
+        padding: 45px 30px;
+    }
+
+    .input-container {
+        justify-content: space-between;
+    }
+
+    .input-container label {
+        font-size: 13px;
+    }
+
+    .input-container input {
+        font-size: 18px;
+        width: 80px;
+        padding: 10px 15px;
+        margin: 0;
+    }
+    
+    .input-container .msg {
+        font-size: 10px;
+    }
+
+    .divider-container {
+        padding: 60px 0;
+    }
+
+    .divider-container .btn {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .divider-container .btn:hover {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+    }
+
+    .result-container span {
+        font-size: 54px;
+    }
+}
